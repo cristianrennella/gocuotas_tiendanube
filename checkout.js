@@ -28,7 +28,7 @@ LoadCheckoutPaymentContext(function(Checkout, PaymentOptions) {
 
       // Use the Checkout HTTP library to post a request to our server and fetch the redirect URL.
       Checkout.http
-        .post('https://gocuotas.com/tiendanube/checkout_urls', {
+        .post('https://www.gocuotas.com/tiendanube/checkout_urls', {
             data: gocuotasRelevantData
         })
         .then(function(responseBody) {
