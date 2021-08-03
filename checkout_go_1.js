@@ -18,12 +18,12 @@ LoadCheckoutPaymentContext(function(Checkout, PaymentOptions) {
       // Gather the minimum required information.
       let gocuotasRelevantData = {
         // You should include all the relevant data here.
-        orderId: Checkout.data.order.cart.id,
-        storeId: Checkout.data.storeId,
-        contactEmail: Checkout.data.order.contact.email,
-        contactPhone: Checkout.data.order.contact.phone,
-        callbackUrls: Checkout.data.callbackUrls,
-        total: Checkout.data.order.cart.prices.total
+        orderId: Checkout.getData("order.cart.id"),
+        storeId: Checkout.getData("storeId"),
+        contactEmail: Checkout.getData("order.contact.email"),
+        contactPhone: Checkout.getData("order.contact.phone"),
+        callbackUrls: Checkout.getData("callbackUrls"),
+        total: Checkout.getData("totalPrice")
       }
 
       // Use the Checkout HTTP library to post a request to our server and fetch the redirect URL.
