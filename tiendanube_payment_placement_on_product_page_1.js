@@ -93,7 +93,7 @@
     newSpanForGocuotasDescription.classList.add('js-max-installments-container', 'js-max-installments', 'col-12', 'mb-2');
 
       var newSpanForPaymentDescription = document.createElement("span");
-      newSpanForPaymentDescription.classList.add('float-left', 'mr-2');
+      newSpanForPaymentDescription.classList.add('float-left');
 
         // SVG option 2
 
@@ -132,7 +132,7 @@
         }
 
       var newSpanForSubPaymentDescription = document.createElement("span");
-      newSpanForSubPaymentDescription.classList.add('d-table');
+      newSpanForSubPaymentDescription.classList.add('text-inline');
 
         var newSpanForInstallment = document.createElement("span");
         newSpanForInstallment.classList.add('js-max-installments');
