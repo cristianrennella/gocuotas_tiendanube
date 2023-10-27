@@ -27,20 +27,6 @@
 
       var newDivForSubPaymentDescription = document.createElement("div");
       newDivForSubPaymentDescription.classList.add('js-max-installments', 'installments', 'd-inline-block');
-
-      /*var installmentStrongDescription = document.createElement("strong");
-      var installmentDescription = document.createTextNode("4");
-      installmentStrongDescription.appendChild(installmentDescription);
-
-      var paymentDescription = document.createTextNode(" cuotas SIN interés con ");
-
-      var methodStrongDescription = document.createElement("strong");
-      var methodDescription = document.createTextNode("tarjeta de DÉBITO");
-      methodStrongDescription.appendChild(methodDescription);*/
-
-      //newDivForSubPaymentDescription.appendChild(installmentStrongDescription);
-      //newDivForSubPaymentDescription.appendChild(paymentDescription);
-      //newDivForSubPaymentDescription.appendChild(methodStrongDescription);
       newDivForSubPaymentDescription.innerHTML = "Hasta <strong>4</strong>  cuotas SIN interés con <strong>tarjeta de DÉBITO</strong>";
 
     newDivForGocuotasDescription.appendChild(newDivForSubPaymentDescription);
@@ -63,21 +49,8 @@
 
       var newSubDivForPaymentDescription = document.createElement("div");
       newSubDivForPaymentDescription.classList.add('js-max-installments', 'label-line', 'label-featured', 'd-inline-block');
+      newSubDivForPaymentDescription.innerHTML = "Hasta <strong>4</strong>  cuotas SIN interés con <strong>tarjeta de DÉBITO</strong>";
 
-        /*var installmentStrongDescription = document.createElement("strong");
-        var installmentDescription = document.createTextNode("4");
-        installmentStrongDescription.appendChild(installmentDescription);
-
-        var paymentDescription = document.createTextNode(" cuotas SIN interés con ");
-
-        var methodStrongDescription = document.createElement("strong");
-        var methodDescription = document.createTextNode("tarjeta de DÉBITO");
-        methodStrongDescription.appendChild(methodDescription);*/
-
-    //newSubDivForPaymentDescription.appendChild(installmentStrongDescription);
-    //newSubDivForPaymentDescription.appendChild(paymentDescription);
-    //newSubDivForPaymentDescription.appendChild(methodStrongDescription);
-    newSubDivForPaymentDescription.innerHTML = "Hasta <strong>4</strong>  cuotas SIN interés con <strong>tarjeta de DÉBITO</strong>";
     newDivForPaymentDescription.appendChild(newSubDivForPaymentDescription);
     newDivForGocuotasDescription.appendChild(newDivForPaymentDescription);
 
@@ -135,21 +108,6 @@
 
         var newSpanForInstallment = document.createElement("span");
         newSpanForInstallment.classList.add('js-max-installments');
-
-        /*var installmentStrongDescription = document.createElement("span");
-        installmentStrongDescription.classList.add('text-accent', 'font-weight-bold');
-        var installmentDescription = document.createTextNode("4");
-        installmentStrongDescription.appendChild(installmentDescription);
-        newSpanForInstallment.appendChild(installmentStrongDescription);
-
-        var paymentDescription = document.createTextNode(" cuotas SIN interés con ");
-        newSpanForInstallment.appendChild(paymentDescription);
-
-        var methodStrongDescription = document.createElement("span");
-        methodStrongDescription.classList.add('text-accent', 'font-weight-bold');
-        var methodDescription = document.createTextNode("tarjeta de DÉBITO");
-        methodStrongDescription.appendChild(methodDescription);
-        newSpanForInstallment.appendChild(methodStrongDescription);*/
         newSpanForInstallment.innerHTML = "Hasta <span class='text-accent font-weight-bold'>4</span>  cuotas SIN interés con <span class='text-accent font-weight-bold'>tarjeta de DÉBITO</span>";
 
         newSpanForSubPaymentDescription.appendChild(newSpanForInstallment);
