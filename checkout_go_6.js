@@ -32,9 +32,7 @@ LoadCheckoutPaymentContext(function (Checkout, PaymentMethods) {
   Checkout.addPaymentOption(ExternalPaymentOption);
 
   setInterval(function(){
-    if(window.SDKCheckout && window.SDKCheckout.changePaymentBenefit){
-      window.SDKCheckout.changePaymentBenefit({ id: 'gocuotas_redirect_payment', value: 'Cuotas sin interes con débito' });
-    }
+    $('.accordion-section-header-label').append('<div class="payment-item-discount text-small-extra">6 cuotas sin interes con debito</div>')
     console.log("gocuotas OK!")
   }, 500)
 });
