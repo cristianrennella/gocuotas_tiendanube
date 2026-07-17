@@ -7,7 +7,7 @@ LoadCheckoutPaymentContext(function (Checkout, PaymentMethods) {
     onLoad: function () {
       Checkout.changePaymentBenefit({
         id: "gocuotas_redirect_payment",
-        value: "Cuotas SIN interés con DÉBITO",
+        value: "Cuotas SIN interés con DÉBITO + 15% OFF en primera compra",
       });
     },
 
